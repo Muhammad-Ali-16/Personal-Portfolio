@@ -1,0 +1,284 @@
+body {
+    background-image: url(1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.nav-main {
+    width: 90%;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    border-radius: 0 0 15px 15px;
+    margin-bottom: 30px;
+}
+
+nav.navbar.bg-body-tertiary {
+    background: linear-gradient(to right, #5c5b5b, #a59e9e, #bdb8b8);
+}
+
+
+.navbar.bg-body-tertiary .navbar-nav .nav-link {
+    color: white;
+
+}
+
+.home-main {
+    height: 600px;
+    width: 90%;
+    background-color: #5c5b5b8c;
+    color: #eee;
+    margin: 0 5%;
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+}
+
+.h-row {
+    margin: 150px 0 20px 0;
+}
+
+.btn1,
+.btn2 {
+    margin: 30px 17px 0 0;
+}
+
+.btn1 {
+    height: 2.5em;
+    width: 8.5em;
+    background-color: transparent;
+    border: 1.5px solid #eee;
+    font-size: 15px;
+    color: #eee;
+
+}
+
+.btn1:hover {
+    background-color: #797474;
+    border: 1.5px solid #797474;
+    transition-duration: 1s;
+
+}
+
+.btn2 {
+    height: 2.5em;
+    width: 8.5em;
+    background-color: #eee;
+    border: 1.5px solid #eee;
+    font-size: 15px;
+    color: #797474;
+
+}
+
+.btn2:hover {
+    background-color: transparent;
+    border: 1.5px solid #eee;
+    color: #eee;
+    transition-duration: 1s;
+
+}
+
+.about-main {
+    height: 1300px;
+    width: 90%;
+    background: linear-gradient(to bottom right, #565555, #b3b0b0, #bdbcbc);
+    position: absolute;
+    margin: 600px 5% 0 5%;
+    color: #eee;
+}
+
+.about-main1 {
+    margin: 30px 0 0 30px;
+    width: 85%;
+
+}
+
+.a-heading {
+    margin: 70px 0 60px 0;
+    color: #eee;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.a-heading1 {
+    word-spacing: 7px;
+    line-height: 3px;
+}
+
+.about-main2 {
+    margin: 30px 0 0 30px;
+    width: 85%;
+
+}
+
+.skill1 {
+    height: 100px;
+    margin: 20px 0 0 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.skill1-t1 {
+    margin: 0 0 0 0;
+    float: left;
+}
+
+.skill1-t2 {
+    margin: 0 -95px 10px 0;
+    float: none;
+}
+
+.skill2 {
+    height: 100px;
+    margin: -20px 0 0 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.skill2-t1 {
+    margin: 0 0 0 0;
+    float: left;
+
+}
+
+.skill2-t2 {
+    margin: 0 -95px 10px 0;
+    float: none;
+}
+
+.skill3 {
+    height: 100px;
+    margin: -20px 0 0 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.skill3-t1 {
+    margin: 0 0 0 0;
+    float: left;
+
+}
+
+.skill3-t2 {
+    margin: 0 -95px 10px 0;
+    float: none;
+}
+
+.skill4 {
+    height: 100px;
+    margin: -20px 0 0 0;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.skill4-t1 {
+    margin: 0 0 0 0;
+    float: left;
+
+}
+
+.skill4-t2 {
+    margin: 0 -95px 10px 0;
+    float: none;
+}
+
+.round {
+    height: 100px;
+    width: 100px;
+    background-color: #444;
+    border-radius: 50%;
+    margin: 60px 42%;
+    position: absolute;
+}
+
+.contact-main {
+    height: auto;
+    width: 100%;
+    background-color: #444;
+    margin-top: 100px;
+    color: #eee;
+    position: absolute;
+}
+
+.details-main {
+    height: 325px;
+    margin: 40px 0 0 10px;
+    background-image: url(https://ui-themez.smartinnovates.net/items/zain/img/map.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.map {
+    height: 252px;
+    margin: 30px auto;
+
+}
+
+.phone {
+    height: auto;
+    margin-left: 50px;
+    line-height: 1.9;
+}
+
+.adress {
+    height: auto;
+    margin: 35px 0 0 50px;
+    line-height: 1.5;
+}
+
+.email {
+    height: auto;
+    margin: 35px 0 0 50px;
+    line-height: 1.9;
+}
+
+.label1 {
+    height: 47px;
+    width: 45%;
+    border-radius: 12px;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #eee;
+    font-size: 16px;
+}
+
+.label2 {
+    height: 47px;
+    width: 45%;
+    border-radius: 12px;
+    margin-left: 15px;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #eee;
+    font-size: 16px;
+}
+
+.label3 {
+    height: 47px;
+    width: 94%;
+    border-radius: 12px;
+    margin: 25px 0 0 0;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #eee;
+    font-size: 16px;
+}
+
+.label4 {
+    height: 180px;
+    width: 94%;
+    border-radius: 12px;
+    margin: 25px 0 0 0;
+    border: 2px solid #333;
+    background-color: #333;
+    color: #eee;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-main {
+    height: 100px;
+    width: 95%;
+    background-color: #000;
+    margin-top: 100%;
+
+}
