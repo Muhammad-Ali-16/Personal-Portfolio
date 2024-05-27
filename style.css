@@ -21,12 +21,15 @@ body {
   --hero-tranparent-bg--: rgba(0, 0, 0, 0.668);
   --text-light--: #eee;
   --text-golden--: #c49b66;
+  --paragraph-color--: #8f8f8f;
   --btn-golden--: #c49b66;
   --btn-light--: #eee;
   --section-bg-dark-1--: #161617;
   --section-bg-dark-2--: #0f0f0f;
   --nav-item-hover--: #c49b66;
   --hero-btn-hover--: #c49b66;
+  --cards-bg-color--: #0a0a0c;
+  --cards-inner-color: #222;
 }
 
 .common-sec-main {
@@ -264,6 +267,8 @@ body {
 
 .progress-bar {
   background-color: #c49b66;
+  width: 0;
+  transition: width 2s ease;
 }
 
 .progress-bar::after {
@@ -312,10 +317,83 @@ body {
   font-weight: 300;
   font-family: "Rubik", sans-serif;
   line-height: 2;
-  color: #8f8f8f;
+  color: var(--paragraph-color--);
 }
 
+/* !-------------------[5]-Services-Section-Start-[5]------------------! */
 
+.services-main {
+  height: auto;
+  background: var(--section-bg-dark-2--);
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.services-sec-heading {
+  margin: 80px 0 30px 0;
+}
+
+.services-cards-common {
+  width: 250px;
+  height: 320px;
+  background: var(--cards-bg-color--);
+  position: relative;
+  display: inline-block;
+}
+
+.icon::before {
+  content: "\f1db";
+  font-size: 35px;
+  position: absolute;
+  top: 54px;
+  left: 106px;
+  z-index: 3;
+  color: #c49b66;
+  transition: .4s;
+}
+
+.icon::after {
+  content: "";
+  display: block;
+  background: var(--cards-inner-color);
+  height: 85px;
+  width: 85px;
+  position: absolute;
+  top: 30px;
+  left: 81px;
+  border-radius: 25px;
+  transform: rotate(45deg);
+  z-index: 2;
+  transition: .4s;
+}
+
+.services-cards-common:hover .icon::after{
+  transform: rotate(0deg);
+  background: #c49b66;
+}
+
+.services-cards-common:hover .icon::before{
+  color: #eee;
+}
+
+.cards-content{
+  width: 90%;
+  margin-top: 140px;
+}
+
+.cards-content h6{
+  color: #eee;
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: smaller;
+}
+
+.cards-content p{
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 1.8;
+  color: var(--paragraph-color--);
+}
 
 
 
@@ -350,7 +428,7 @@ body {
   .about-sec-col-3-main {
     width: 85%;
     margin: 0;
-  }  
+  }
 
 }
 
@@ -388,7 +466,7 @@ body {
   .section-common-heading>h4 {
     font-size: 50px;
   }
-  
+
 
 }
 
