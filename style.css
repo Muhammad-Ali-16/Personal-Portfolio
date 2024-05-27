@@ -4,7 +4,7 @@
 
 /* !-------------------[1]-Basic-Styling-[1]-------------------! */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Rubik:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   margin: 0;
@@ -32,7 +32,26 @@ body {
 .common-sec-main {
   width: 100%;
   position: relative;
+  padding-bottom: 50px;
 }
+
+.section-common-heading>h4 {
+  font-size: 70px;
+}
+
+.section-common-heading {
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #333;
+  -webkit-text-stroke: 2px #333;
+  transition: .3s;
+}
+
+.common-sec-main:hover .section-common-heading {
+  color: transparent;
+}
+
 
 /* !-------------------[2]-NavBar-Start-[2]-------------------! */
 
@@ -61,16 +80,16 @@ body {
   font-size: 23px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border: none;
 }
 
-.bi-justify-left{
+.bi-justify-left {
   color: #eee;
   font-size: 28px;
 }
 
-.navbar-toggler:hover .bi-justify-left{
+.navbar-toggler:hover .bi-justify-left {
   color: #c49b66;
 }
 
@@ -210,9 +229,95 @@ body {
 /* !-------------------[4]-About-Section-Start-[4]------------------! */
 
 .about-main {
-  height: 100vh;
+  height: auto;
   background: var(--section-bg-dark-1--);
+  padding-bottom: 0;
 }
+
+.about-sec-content .container .row .about-sec-col-1-main,
+.about-sec-col-3-main {
+  padding-top: 80px;
+  position: relative;
+}
+
+.skills-main {
+  margin-top: 90px;
+}
+
+.skills-item {
+  height: auto;
+  margin: 40px 0;
+  color: var(--text-light--);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.skills-item h6 {
+  font-size: 13px;
+}
+
+.progress {
+  border-radius: 50px;
+  height: 8px;
+  width: 350px;
+  background-color: #333;
+}
+
+.progress-bar {
+  background-color: #c49b66;
+}
+
+.progress-bar::after {
+  content: attr(data-value);
+  position: absolute;
+  right: 70px;
+}
+
+.about-sec-img {
+  height: 600px;
+  background: url(Images/about-img.png) no-repeat center center;
+  background-size: cover;
+}
+
+.about-sec-col-3-main {
+  width: 95%;
+  color: var(--text-light--);
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0 auto;
+
+}
+
+.about-col-3-heading h6 {
+  font-weight: 200;
+  letter-spacing: 7px;
+  margin-bottom: 30px;
+}
+
+.about-col-3-heading h3 {
+  letter-spacing: 2px;
+  background: #c49b66;
+  padding: 6px;
+}
+
+.about-col-3-content {
+  margin-top: 50px;
+}
+
+.about-col-3-content h6 {
+  letter-spacing: 2px;
+}
+
+.about-col-3-content p {
+  margin-top: 20px;
+  font-size: smaller;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+  line-height: 2;
+  color: #8f8f8f;
+}
+
+
+
+
 
 
 
@@ -242,7 +347,21 @@ body {
     width: 110%;
   }
 
+  .about-sec-col-3-main {
+    width: 85%;
+    margin: 0;
+  }  
+
 }
+
+@media screen and (max-width:1210px) {
+
+  .progress {
+    width: 95%;
+  }
+
+}
+
 
 @media screen and (max-width:998px) {
 
@@ -250,7 +369,7 @@ body {
     color: var(--nav-item-hover--);
   }
 
-  .hero-sec-content .container .row h3{
+  .hero-sec-content .container .row h3 {
     font-size: 50px;
   }
 
@@ -258,23 +377,28 @@ body {
 
 @media screen and (max-width:790px) {
 
-  .hero-sec-content .container .row h3{
+  .hero-sec-content .container .row h3 {
     font-size: 40px;
   }
 
-  .hero-sec-content .container .row h2{
+  .hero-sec-content .container .row h2 {
     font-size: 52px;
   }
+
+  .section-common-heading>h4 {
+    font-size: 50px;
+  }
+  
 
 }
 
 @media screen and (max-width:650px) {
 
-  .hero-sec-content .container .row h3{
+  .hero-sec-content .container .row h3 {
     font-size: 30px;
   }
 
-  .hero-sec-content .container .row h2{
+  .hero-sec-content .container .row h2 {
     font-size: 38px;
   }
 
@@ -282,7 +406,7 @@ body {
 
 @media screen and (max-width:450px) {
 
-  .hero-sec-content .container .row h3{
+  .hero-sec-content .container .row h3 {
     font-size: 19px;
   }
 
@@ -290,11 +414,11 @@ body {
 
 @media screen and (max-width:350px) {
 
-  .hero-sec-content .container .row h3{
+  .hero-sec-content .container .row h3 {
     font-size: 17px;
   }
 
-  .hero-sec-content .container .row h2{
+  .hero-sec-content .container .row h2 {
     font-size: 25px;
   }
 
