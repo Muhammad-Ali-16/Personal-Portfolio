@@ -1,4 +1,4 @@
 # Personal-Web-Template
 Personal Website Template
 
-View Demo: https://muhammad-ali-16.github.io/Personal-Protfolio/
+View Demo: https://muhammad-ali-16.github.io/Personal-Portfolio/
