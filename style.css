@@ -1,6 +1,29 @@
-/*  font-family: "Rubik", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
+/*
+<---------------About-This-Template-------------->
+
+Theme Name: Personal-Portfolio  
+Theme URL: https://muhammad-ali-16.github.io/Personal-Portfolio/
+Author:Muhammad Ali Raza
+Version: 1.0
+
+<---------------Table-Of-Contents-------------->
+
+1:-Basic-Styling
+2:-NavBar-Section
+3:-Hero-Section
+4:-About-Section
+5:-Services-Section
+6:-Portoflio-Section
+7:-Contact-Section
+8:-Footer
+9:-Media-Queries
+
+<---------------Font-Family-Used-------------->
+
+1:-[ "Rubik", sans-serif ]
+2:-[ "Josefin Sans", sans-serif ]
 */
+
 
 /* !-------------------[1]-Basic-Styling-[1]-------------------! */
 
@@ -18,15 +41,15 @@ body {
 :root {
   --navbar-bg-color--: #222222;
   --navbar-txt-light--: #eee;
+  --nav-item-hover--: #c49b66;
   --hero-tranparent-bg--: rgba(0, 0, 0, 0.668);
-  --text-light--: #eee;
-  --text-golden--: #c49b66;
-  --paragraph-color--: #8f8f8f;
-  --btn-golden--: #c49b66;
-  --btn-light--: #eee;
   --section-bg-dark-1--: #161617;
   --section-bg-dark-2--: #0f0f0f;
-  --nav-item-hover--: #c49b66;
+  --text-light--: #eee;
+  --text-golden--: #c49b66;
+  --btn-light--: #eee;
+  --btn-golden--: #c49b66;
+  --paragraph-color--: #8f8f8f;
   --hero-btn-hover--: #c49b66;
   --cards-bg-color--: #0a0a0c;
   --cards-inner-color: #222;
@@ -367,34 +390,192 @@ body {
   transition: .4s;
 }
 
-.services-cards-common:hover .icon::after{
+.services-cards-common:hover .icon::after {
   transform: rotate(0deg);
   background: #c49b66;
 }
 
-.services-cards-common:hover .icon::before{
+.services-cards-common:hover .icon::before {
   color: #eee;
 }
 
-.cards-content{
+.cards-content {
   width: 90%;
   margin-top: 140px;
 }
 
-.cards-content h6{
+.cards-content h6 {
   color: #eee;
   letter-spacing: 2px;
   font-family: "Josefin Sans", sans-serif;
   font-size: smaller;
 }
 
-.cards-content p{
+.cards-content p {
   font-size: 12px;
   margin-top: 10px;
   line-height: 1.8;
   color: var(--paragraph-color--);
 }
 
+/* !-------------------[6]-Portfolio-Section-Start-[6]------------------! */
+
+.portfolio-main {
+  height: 80vh;
+  background: var(--section-bg-dark-1--);
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.portfolio-sec-heading {
+  margin: 70px 0;
+}
+
+.gallery-btns {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.gallery-btns button {
+  color: #eee;
+  background: transparent;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: small;
+  margin: 0 15px;
+  transition: 0.3s;
+}
+
+.gallery-btns button:hover {
+  background: #c49b66;
+}
+
+.gallery-btns button.active {
+  background-color: #c49b66;
+}
+
+.gallery-content-main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 50px 0 0 20px;
+}
+
+.gallery-content {
+  display: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* !-------------------[7]-Contact-Section-Start-[7]------------------! */
+
+.contact-main {
+  height: 80vh;
+  background: var(--section-bg-dark-2--);
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.contact-sec-heading {
+  margin: 70px 0;
+}
+
+/* !-------------------[8]-Footer-Section-Start-[8]------------------! */
+
+.footer-main {
+  height:auto;
+  background: var(--section-bg-dark-1--);
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.footer-heading {
+  padding: 40px 0 20px 0;
+  color: #eee;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.social-icon {
+  font-size: larger;
+  padding: 10px;
+}
+
+.social-links{
+  position: relative;
+  display: inline-block;
+}
+
+.social-icon::before {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  margin: 0px 12px;
+  font-size: 16px;
+  color: #c49b66;
+}
+
+.social-icon::after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background-color: #5555;
+  border-radius: 12px;
+  display: inline-block;
+  position: relative;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+ 
+
+.social-icon:hover::after{
+transform: rotate(0deg);
+background-color: #c49b66;
+}
+
+.social-icon:hover::before{
+color: #eee;
+  }
+  
+.footer-main p{
+  margin-top: 20px;
+  color: #8f8f8f;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: smaller;
+}
 
 
 
@@ -402,41 +583,35 @@ body {
 
 
 
-
-
-
-
-
-
-/* !-------------------[]-Media-Queries-[]------------------! */
+/* !-------------------[9]-Media-Queries-[9]------------------! */
 
 @media screen and (max-width:1300px) and (min-width:992px) {
 
   .about-col-3-content p:last-of-type {
     display: none;
-  }  
+  }
 
 }
 
 @media screen and (max-width:1200px) and (min-width:992px) {
-  
+
   .services-cards-common {
     width: auto;
     height: auto;
     padding: 8px;
-   }
-  
- .icon::before {
+  }
+
+  .icon::before {
     content: "\f1db";
     font-size: 30px;
     top: 56px;
     left: 85px;
-   }
-   
+  }
+
   .icon::after {
     top: 30px;
     left: 55px;
-    }
+  }
 }
 
 @media screen and (min-width:998px) {
@@ -467,6 +642,7 @@ body {
     width: 95%;
   }
 
+
 }
 
 @media screen and (max-width:998px) {
@@ -477,6 +653,10 @@ body {
 
   .hero-sec-content .container .row h3 {
     font-size: 50px;
+  }
+
+  .gallery-btns {
+    overflow-x: scroll;
   }
 
 }
