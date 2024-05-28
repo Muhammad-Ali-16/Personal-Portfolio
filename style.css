@@ -410,6 +410,35 @@ body {
 
 /* !-------------------[]-Media-Queries-[]------------------! */
 
+@media screen and (max-width:1300px) and (min-width:992px) {
+
+  .about-col-3-content p:last-of-type {
+    display: none;
+  }  
+
+}
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+  
+  .services-cards-common {
+    width: auto;
+    height: auto;
+    padding: 8px;
+   }
+  
+ .icon::before {
+    content: "\f1db";
+    font-size: 30px;
+    top: 56px;
+    left: 85px;
+   }
+   
+  .icon::after {
+    top: 30px;
+    left: 55px;
+    }
+}
+
 @media screen and (min-width:998px) {
 
   .nav-item .nav-link::after {
@@ -439,7 +468,6 @@ body {
   }
 
 }
-
 
 @media screen and (max-width:998px) {
 
