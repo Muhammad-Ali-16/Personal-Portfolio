@@ -494,7 +494,6 @@ body {
   }
 }
 
-
 /* !-------------------[7]-Contact-Section-Start-[7]------------------! */
 
 .contact-main {
@@ -535,7 +534,6 @@ body {
   position: relative;
   z-index: 4;
 }
-
 
 .form-control {
   background: #1e1e1f;
@@ -695,12 +693,6 @@ body {
   font-size: smaller;
 }
 
-
-
-
-
-
-
 /* !-------------------[9]-Media-Queries-[9]------------------! */
 
 @media screen and (max-width:1300px) and (min-width:992px) {
@@ -730,6 +722,23 @@ body {
     top: 30px;
     left: 55px;
   }
+}
+
+@media screen and (max-width:765px) and (min-width:575px) {
+
+  .icon::before {
+    font-size: 32px;
+    top: 55px;
+    left: 95px;
+    }
+  
+  .icon::after {
+    height: 82px;
+    width: 82px;
+    top: 30px;
+    left: 70px;
+    }
+  
 }
 
 @media screen and (min-width:998px) {
@@ -772,8 +781,6 @@ body {
   .progress {
     width: 95%;
   }
-
-
 }
 
 @media screen and (max-width:998px) {
@@ -784,10 +791,6 @@ body {
 
   .hero-sec-content .container .row h3 {
     font-size: 50px;
-  }
-
-  .gallery-btns {
-    overflow-x: scroll;
   }
 
   .contact-sec-details {
@@ -809,8 +812,6 @@ body {
   .section-common-heading>h4 {
     font-size: 50px;
   }
-
-
 }
 
 @media screen and (max-width:770px) {
@@ -830,8 +831,6 @@ body {
   .form {
     margin: 0 0 30px 0;
   }
-
-
 }
 
 @media screen and (max-width:650px) {
@@ -844,6 +843,18 @@ body {
     font-size: 38px;
   }
 
+  .gallery-btns {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: start;
+    
+  }
+
+  .gallery-btns button {
+    padding: 5px 20px;
+    margin: 0 6px;
+   }
+  
 }
 
 @media screen and (max-width:450px) {
