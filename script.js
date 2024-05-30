@@ -1,3 +1,18 @@
+window.onscroll = function () { scrollFunction() };
+let navbar = document.getElementById("navbar");
+
+function scrollFunction() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        navbar.classList.add("nav-scroll");
+        navbar.classList.remove("navbar-color");
+    }
+
+    else {
+        navbar.classList.remove("nav-scroll");
+        navbar.classList.add("navbar-color");
+    }
+}
+
 function openTab(evt, cityName) {
 
     var i, gallery_content, gallery_links;
