@@ -32,5 +32,34 @@ function openTab(evt, cityName) {
     evt.currentTarget.className += " active";
 }
 
+document.getElementById("defaultOpen").click();
 
-document.getElementById("defaultOpen").click(); 
+
+let type = document.getElementById("type");
+
+const writter = {
+
+    write1: "Ali Raza",
+    write2: "Web Designer",
+    func: function (i) {
+
+        if (i === 0) {
+            return this.write1;
+        } else {
+            return this.write2;
+        }
+
+    }
+};
+
+let i = 0;
+
+
+function updateContent() {
+    type.innerHTML = writter.func(i);
+    i = (i + 1) % 2;
+}
+
+setInterval(updateContent, 2100);
+
+updateContent();
