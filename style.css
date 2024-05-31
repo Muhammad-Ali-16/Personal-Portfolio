@@ -61,7 +61,7 @@ body {
   padding-bottom: 50px;
 }
 
-.section-common-heading>h4 {
+.section-common-heading > h4 {
   font-size: 70px;
 }
 
@@ -78,6 +78,15 @@ body {
   color: transparent;
 }
 
+p{
+  color: #8f8f8f;
+  font-family: "Rubik", sans-serif;
+  font-size: smaller;
+}
+
+h6{
+  font-family: "Josefin Sans", sans-serif;
+}
 
 /* !-------------------[2]-NavBar-Start-[2]-------------------! */
 
@@ -349,9 +358,7 @@ body {
   margin-top: 20px;
   font-size: smaller;
   font-weight: 300;
-  font-family: "Rubik", sans-serif;
   line-height: 2;
-  color: var(--paragraph-color--);
 }
 
 /* !-------------------[5]-Services-Section-Start-[5]------------------! */
@@ -418,7 +425,6 @@ body {
 .cards-content h6 {
   color: #eee;
   letter-spacing: 2px;
-  font-family: "Josefin Sans", sans-serif;
   font-size: smaller;
 }
 
@@ -426,7 +432,6 @@ body {
   font-size: 12px;
   margin-top: 10px;
   line-height: 1.8;
-  color: var(--paragraph-color--);
 }
 
 /* !-------------------[6]-Portfolio-Section-Start-[6]------------------! */
@@ -510,6 +515,11 @@ body {
   position: relative;
 }
 
+.gallery-img{
+  width: 100%;
+  border-radius: 12px;
+}
+
 .item-overlay {
   width: 100%;
   height: calc(100% - 7%);
@@ -525,6 +535,7 @@ body {
   transition: .4s all ease;
   cursor: pointer;
   user-select: none;
+  border-radius: 12px;
 }
 
 .gallery-item:hover .item-overlay {
@@ -533,7 +544,6 @@ body {
 } 
 
 .overlay-content h6{
-  font-family: "Josefin Sans", sans-serif;
   color: #c49b66;
   font-size: large;
   transform: translateY(-27px);
@@ -545,8 +555,6 @@ body {
 }
 
 .overlay-content p{
-  font-family: "Josefin Sans", sans-serif;
-  color: #8f8f8f;
   transform: translateY(20px);
   transition: .5s all ease;
 } 
@@ -581,14 +589,7 @@ body {
 .details-item h6 {
   color: #c49b66;
   font-size: smaller;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.details-item p {
-  color: #8f8f8f;
-  font-size: smaller;
-  font-family: "Rubik", sans-serif;
-}
+  }
 
 .form {
   margin: 0 0 0 50px;
@@ -737,7 +738,6 @@ body {
   transition: .3s;
 }
 
-
 .social-icon:hover::after {
   transform: rotate(0deg);
   background-color: #c49b66;
@@ -851,10 +851,10 @@ body {
 
 @media screen and (max-width:998px) {
 
-.navbar-collapse{
+  .navbar-collapse{
     background: var(--navbar-bg-color--);
-  }	
-	
+  }
+  
   .nav-item:hover .nav-link {
     color: var(--nav-item-hover--);
   }
@@ -946,6 +946,3 @@ body {
   }
 
 }
-
-
-
