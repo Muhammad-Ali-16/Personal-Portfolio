@@ -152,9 +152,9 @@ h6{
 /* !-------------------[3]-Hero-Section-Start-[3]------------------! */
 
 .hero-bg-img {
-  height: 100vh;
+  height: 120%;
   width: 100%;
-  background: url('Images/hero-img.png') center center no-repeat;
+  background: url('Images/hero-bg.png') center center no-repeat;
   background-size: cover;
   position: fixed;
   z-index: -1;
@@ -755,14 +755,6 @@ h6{
 }
 
 /* !-------------------[9]-Media-Queries-[9]------------------! */
-
-@media screen and (max-width:1300px) and (min-width:992px) {
-
-  .about-col-3-content p:last-of-type {
-    display: none;
-  }
-
-}
 
 @media screen and (max-width:1200px) and (min-width:992px) {
 
